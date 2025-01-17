@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto",'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    width: 100vw;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: dodgerblue;
+    color: aliceblue;
+    font-weight: bold;
+    width: 100%;
+}
+.dashboard{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.search{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 0rem 2rem;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.magnify{
+    width: max(5%, 1rem);
+}
+.searchbar path{
+    fill: black;
+}
+.searchtab{
+    flex-grow: 1;
+    background-color: rgba(100, 148, 237, 0.199);
+    height: 1.7rem;
+    border-radius: 12px;
+    margin: 0 16px;
+}
+.contents{
+    background-color:rgba(100, 148, 237, 0.199);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 15px;
+    position: relative;
+}
+p{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+div.icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    
+}
+div.icon>svg{
+    width:20%;
+    margin: 8px;
+}
+path{
+    fill: white;
+}
+li{
+    list-style: none;
+}
+
+.support{
+    flex-grow: 1;
+}
+.nav>ul, .support>ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem 0;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.nav >ul>li,.support >ul>li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav svg,.support svg{
+    width: 15%;
+    margin: 8px;
+}
+
+.notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.bell{
+    width: max(1.5rem,5%);
+}
+.profile-icon{
+    width: max(2rem,20%);
+    background-color: yellow;
+    padding: 2px;
+    border-radius: 100%;
+}
+.notification svg path{
+    fill: black;
+}
+.profile-name{
+    padding: 8px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    padding:2rem;
+    gap: 15px;
+    
+}
+
+.title{
+    font-weight: bold;
+}
+
+p.title{
+    position: absolute;
+    top:1rem;
+}
+.project-cards{
+    padding: 1rem;
+    background-color: aliceblue;
+    border-left: 4px solid rgba(219, 181, 10, 0.877);
+}
