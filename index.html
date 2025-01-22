@@ -8,6 +8,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -157,85 +158,41 @@
         </div>
         <div class="contents">
           <div class="projects">
-            <div class="project-cards">
-              <p class="title">Your Projects</p>
-              <div class="title">Project 1</div>
-              <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                placeat vel, vero nesciunt temporibus itaque similique
-                necessitatibus? Saepe non mollitia at placeat animi!
+            <p class="title">Your Library</p>
+            <button type="button" class="new-book">New Book +</button>
+            <form action="#" class="new-book-form">
+
+              <div class="">
+                <label for="book-title">Title</label>
+                <input type="text" id="book-title">
               </div>
-              <div class="bookmark">
-                <div class="star"></div>
-                <div class="seen"></div>
-                <div class="share"></div>
+            
+              <div class="">
+                <label for="book-author">Author</label>
+                <input type="text" id="book-author">
               </div>
-            </div>
-            <div class="project-cards">
-              <div class="title">Project 2</div>
-              <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                placeat vel, vero nesciunt temporibus itaque similique
-                necessitatibus? Saepe non mollitia at placeat animi!
+            
+              <div class="">
+                <label for="total-pages">Total Pages</label>
+                <input type="number" id="total-pages">
               </div>
-              <div class="bookmark">
-                <div class="star"></div>
-                <div class="seen"></div>
-                <div class="share"></div>
+            
+              <div class="read-book">
+                <h4>Read</h3>
+                <div>
+                  <div>
+                    <input type="radio" id="yes" name="read_type" value="yes">
+                    <label for="child">Yes</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="no" name="read_type" value="no">
+                    <label for="adult">No</label>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="project-cards">
-              <div class="title">Project 3</div>
-              <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                placeat vel, vero nesciunt temporibus itaque similique
-                necessitatibus? Saepe non mollitia at placeat animi!
-              </div>
-              <div class="bookmark">
-                <div class="star"></div>
-                <div class="seen"></div>
-                <div class="share"></div>
-              </div>
-            </div>
-            <div class="project-cards">
-              <div class="title">Project 4</div>
-              <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                placeat vel, vero nesciunt temporibus itaque similique
-                necessitatibus? Saepe non mollitia at placeat animi!
-              </div>
-              <div class="bookmark">
-                <div class="star"></div>
-                <div class="seen"></div>
-                <div class="share"></div>
-              </div>
-            </div>
-            <div class="project-cards">
-              <div class="title">Project 5</div>
-              <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                placeat vel, vero nesciunt temporibus itaque similique
-                necessitatibus? Saepe non mollitia at placeat animi!
-              </div>
-              <div class="bookmark">
-                <div class="star"></div>
-                <div class="seen"></div>
-                <div class="share"></div>
-              </div>
-            </div>
-            <div class="project-cards">
-              <div class="title">Project 6</div>
-              <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                placeat vel, vero nesciunt temporibus itaque similique
-                necessitatibus? Saepe non mollitia at placeat animi!
-              </div>
-              <div class="bookmark">
-                <div class="star"></div>
-                <div class="seen"></div>
-                <div class="share"></div>
-              </div>
-            </div>
+              <button class="add-book" type="submit">Submit</button>
+            </form>
           </div>
           <div class="news">
             <div class="announcement">

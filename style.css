@@ -139,6 +139,66 @@ p.title{
     position: absolute;
     top:1rem;
 }
+.new-book{
+    position: absolute;
+    right: 50%;
+    top: 4px;
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+    background-color: dodgerblue;
+    color: aliceblue;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid dodgerblue;
+    box-shadow: rgb(0, 0, 0) 2px 2px 5px 1px; 
+}
+.new-book:active{
+    background-color: rgb(45, 126, 207);
+}
+form{
+    position: absolute;
+    top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(45, 126, 207);
+    color: aliceblue;
+    font-weight: bold;
+    padding: 1rem;
+    gap: 15px;
+}
+.read-book{
+    display: flex;
+    gap: 16px;
+}
+.add-book{
+    grid-column: 1/-1;
+    width: 15%;
+    padding: 4px;
+    border-radius: 8px;
+    color: aliceblue;
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    justify-self: center;
+}
+input{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+input:focus {
+border-color: #007bff;
+box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.new-book-form{
+    display: none;
+}
+
 .project-cards{
     padding: 1rem;
     background-color: aliceblue;
